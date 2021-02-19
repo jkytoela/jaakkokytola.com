@@ -16,7 +16,7 @@ module.exports = {
     // "bundle": true,
   },
   packageOptions: {
-    /* ... */
+    knownEntrypoints: ['gsap/CSSPlugin', 'gsap/PixiPlugin', 'gsap/MotionPathPlugin'],
   },
   devOptions: {
     /* ... */
