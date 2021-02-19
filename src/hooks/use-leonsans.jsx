@@ -39,18 +39,9 @@ function useLeonSans(canvasRef, fontOptions, canvasOptions) {
     canvasRef.current.height = canvasHeight * pixelRatio;
     canvasRef.current.style.width = canvasWidth + "px";
     canvasRef.current.style.height = canvasHeight + "px";
-    
     context.current.scale(pixelRatio, pixelRatio);
-    
     leonSansRef.current = new LeonSans({ ...canvasOptions, ...fontOptions });
     requestRef.current = requestAnimationFrame(animate);
-    
-    return () => {
-      const lastReqRef = lastReqRef.current;
-      if (lastReqRef) {
-        cancelAnimationFrame(lastRafReq);
-      }
-    };
   }, [context]);
 
   return { leonSansRef };
