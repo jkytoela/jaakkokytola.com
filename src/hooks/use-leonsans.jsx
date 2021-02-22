@@ -1,5 +1,5 @@
-import React from "react";
-import LeonSans from "leonsans/src/leonsans";
+import * as React from 'react';
+import LeonSans from 'leonsans/src/leonsans';
 
 function useLeonSans(canvasRef, fontOptions, canvasOptions) {
   const { canvasWidth, canvasHeight, pixelRatio } = canvasOptions;
