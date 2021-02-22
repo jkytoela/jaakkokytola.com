@@ -60,7 +60,7 @@ const TechGridItem = ({ icon, index, delay, itemDelay }) => {
       drag
     >
       {icon.isClass ? (
-        <motion.i className={tw(`text-6xl lg:text-8xl cursor-pointer ${icon.src}`)} />
+        <motion.i className={`${tw(`text-6xl lg:text-8xl cursor-pointer`)} ${icon.src}`} />
       ) : (
         <motion.img
           drag

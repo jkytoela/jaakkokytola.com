@@ -11,7 +11,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className={tw(`min-h-screen min-w-screen bg-white flex flex-col lg:overflow-hidden`)}>
+    <div className={tw(`min-h-screen bg-white flex flex-col lg:overflow-hidden`)}>
       <Header
         delay={0.65}
         menuSpinDelay={9.75}
