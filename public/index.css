@@ -8,9 +8,9 @@ html {
   font-size: 16px;
 }
 
-body, html {
+/* body, html {
   overflow: hidden;
-}
+} */
 
 *, *:before, *:after {
   box-sizing: inherit;

@@ -1,6 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app.jsx';
+import { setup } from 'twind'
+
+setup({
+  theme: {
+    fontFamily: {
+      sans: ['Poppins', 'sans'],
+      cursive: ['La Belle Aurore', 'cursive'],
+    },
+  },
+});
 
 ReactDOM.render(
  <React.StrictMode>

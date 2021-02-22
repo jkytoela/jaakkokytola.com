@@ -6,7 +6,7 @@ import useLeonSans from '../../hooks/use-leonsans';
 const Index = () => {
   const canvasRef = React.useRef(null);
   const [isIntro, setIsIntro] = React.useState(true);
-  const [location, setLocation] = useLocation();
+  const [, setLocation] = useLocation();
 
   const canvasOptions = {
     canvasWidth: window.innerWidth,
@@ -69,7 +69,7 @@ const Index = () => {
       })
       .set(leonSansRef.current, {
         size: 15000,
-        duration: 1.35,
+        duration: 1.45,
         ease: 'Power4.easeIn',
         onComplete: onComplete,
       });
