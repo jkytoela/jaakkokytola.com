@@ -25,12 +25,12 @@ const Header = ({ delay, menuSpinDelay }) => {
         damping: 8,
       }}
     >
-      <div className={tw(`flex items-center justify-between h-28 lg:h-36`)}>
-        <h1 className={tw(`font-sans text-2xl lg:text-4xl font-bold text-gray-800 pointer-events-none`)}>
+      <div className={tw(`flex items-center justify-between h-28 lg:h-40`)}>
+        <h1 className={tw(`font-sans text-2xl lg:text-5xl font-bold text-gray-800 pointer-events-none`)}>
           Jaakko Kytölä
         </h1>
         <motion.div
-          className={tw(`h-10 w-10 lg:h-12 lg:w-12 cursor-pointer text-blue-500`)}
+          className={tw(`h-10 w-10 lg:h-12 lg:w-12 cursor-pointer relative`)}
           animate={{
             rotate: [0, 15, -10, 0],
           }}

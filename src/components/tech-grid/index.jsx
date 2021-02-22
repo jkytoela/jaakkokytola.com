@@ -56,11 +56,11 @@ const TechGridItem = ({ icon, index, delay, itemDelay }) => {
       ref={ref}
       variants={itemVariants}
       custom={delayRef}
-      className={tw(`m-4`)}
+      className={tw(`m-4 lg:mx-4 lg:my-8`)}
       drag
     >
       {icon.isClass ? (
-        <motion.i className={`${tw(`text-6xl lg:text-8xl cursor-pointer`)} ${icon.src}`} />
+        <motion.i className={`${tw(`text-7xl lg:text-8xl cursor-pointer`)} ${icon.src}`} />
       ) : (
         <motion.img
           drag
@@ -89,7 +89,8 @@ const TechGrid = ({ delay, itemDelay }) => {
         initial="hidden"
         animate={controls}
         onAnimationComplete={isComplete}
-        className={tw(`md:-mr-4 mt-8 lg:mt-0 flex flex-wrap flex-1 align-center justify-evenly md:justify-end max-w-2xl`)}
+        className={tw(`md:-mr-4 mt-8 lg:mt-0 flex flex-wrap flex-1 align-center justify-evenly md:justify-end max-w-2xl relative`)}
+
       >
         {techIcons.map((icon, index) => (
           <TechGridItem
@@ -100,6 +101,23 @@ const TechGrid = ({ delay, itemDelay }) => {
             itemDelay={itemDelay}
           />
         ))}
+        <motion.div
+          className={tw(`absolute -right-20 lg:-right-32 top-16 md:top-24 text-gray-400 text-sm md:text-lg`)}
+          initial={{
+            opacity: 0,
+            x: 200,
+          }}
+          animate={{
+            opacity: 1,
+            x: 0,
+            rotate: 90,
+          }}
+          transition={{
+            delay: delay + 5,
+          }}
+        >
+          I like to work with
+        </motion.div>
       </motion.div>
     </div>
   );

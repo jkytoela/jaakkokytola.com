@@ -14,7 +14,7 @@ const Link = ({ link, text }) => <a href={link} target="_blank" className={tw(`u
 const AboutMe = ({ titleDelay, subtitleDelay }) => (
   <div className={tw(`flex flex-col lg:flex-1`)}>
     <motion.h1
-      className={tw(`font-sans text-3xl lg:text-4xl leading-snug lg:leading-relaxed font-semibold max-w-lg text-gray-800`)}
+      className={tw(`font-sans text-3xl lg:text-5xl leading-snug lg:leading-relaxed font-semibold max-w-lg text-gray-800`)}
       initial={{
         scale: 0,
       }}
