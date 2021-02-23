@@ -15,9 +15,9 @@ It's made mostly for learning and experimenting with new stuff:
 ---
 
 ```bash
-npm install
+yarn
 ```
 
 ```bash
-npm start
+yarn start
 ```

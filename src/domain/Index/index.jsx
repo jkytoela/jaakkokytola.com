@@ -37,7 +37,7 @@ const Index = () => {
       .fromTo(
         leonSansRef.current.drawing,
         { value: 0 },
-        { value: 1, duration: 1.6, stagger: 1, ease: 'Power2.inOut' }
+        { value: 1, duration: 1, stagger: 1, ease: 'Power2.inOut' }
       )
       .to(leonSansRef.current, {
         weight: 550,
