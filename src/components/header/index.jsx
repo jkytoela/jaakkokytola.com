@@ -38,11 +38,11 @@ const Header = ({ delay, menuSpinDelay }) => {
             delay: menuSpinDelay,
           }}
         >
-          <motion.img
+          {/* <motion.img
             src={isHover ? burgerColored : burger}
             onHoverStart={toggleHover}
             onHoverEnd={toggleHover}
-          />
+          /> */}
         </motion.div>
       </div>
     </motion.div>
