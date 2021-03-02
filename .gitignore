@@ -1,4 +1,3 @@
 .snowpack
 build/*
-!build/_redirects
 node_modules
