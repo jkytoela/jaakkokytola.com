@@ -1,0 +1,8 @@
+@tailwind base;
+
+address {
+  font-style: normal;
+}
+
+@tailwind components;
+@tailwind utilities;
