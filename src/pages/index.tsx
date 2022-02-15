@@ -42,6 +42,7 @@ const lists = [
   },
 ];
 
+// TODO: Add contact form and use Netlify forms
 const Index = () => {
   return (
     <MainTemplate title="Jaakko Kytölä" description="My personal website">
@@ -75,6 +76,20 @@ const Index = () => {
               </div>
             ))}
           </div>
+          <h2>Contact me</h2>
+          <address>
+            <strong>Jaakko Kytölä</strong>
+            <br />
+            kytola.jaakko@gmail.com
+            <br />
+            +358 40 5432 030
+            <br />
+            Espoo, Finland
+            <br />
+            <a href="https://www.linkedin.com/in/jkytola/">LinkedIn</a>{' '}
+            <a href="https://www.twitter.com/bjakyt/">Twitter</a>{' '}
+            <a href="https://www.github.com/jkytoela/">Github</a>{' '}
+          </address>
         </div>
       </div>
     </MainTemplate>
