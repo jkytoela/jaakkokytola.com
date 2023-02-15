@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 import Meta from '@/components/Meta';
 
 interface IMain {

@@ -1,5 +1,4 @@
-/* eslint-disable global-require */
-// eslint-disable-next-line import/no-extraneous-dependencies
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
