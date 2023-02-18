@@ -1,0 +1,6 @@
+name: infra
+description: website infra
+runtime:
+  name: nodejs
+  options:
+    typescript: false
